@@ -2,12 +2,6 @@ import turtle
 import time
 import random
 
-
-# install turtles in cms with pip install turtles
-
-
-
-
 delay = 0.1
 score = 0
 
@@ -77,9 +71,6 @@ def move():
         x = head.xcor()
         head.setx(x-20)
 
-
-
-
 # bindings
 wn.listen()
 wn.onkeypress(go_up, 'w')
@@ -87,8 +78,8 @@ wn.onkeypress(go_right, 'd')
 wn.onkeypress(go_left, 'a')
 wn.onkeypress(go_down, 's')
 
-# Main game loop
 
+# Main game loop
 while True:
     wn.update()
 
@@ -140,9 +131,6 @@ while True:
         y = head.ycor()
         segments[0].goto(x,y)
 
-
-
-
     move()
 
     for segment in segments:
@@ -163,9 +151,6 @@ while True:
             food.goto(x,y)
 
 
-
-
     time.sleep(delay)
-
 
 wn.mainloop()
